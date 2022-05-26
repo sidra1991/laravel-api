@@ -9,4 +9,11 @@
     <li> {{$post->title}} <a href="{{ route('show', $post->id) }}">guarda meglio</a></li>
 
     @endforeach
+
+    <hr>
+    @auth
+        <a href="{{route('admin.post.create')}}">crea nuovo post</a>
+    @endauth
+
+
 </ul>

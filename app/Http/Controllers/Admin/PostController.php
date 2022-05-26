@@ -28,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.editing.create');
     }
 
     /**
@@ -39,7 +39,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return redirect('/');
     }
 
     /**
@@ -61,7 +61,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('admin.editing.edpost', compact('post'));
     }
 
     /**
@@ -73,7 +73,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        return redirect('/');
     }
 
     /**

@@ -10,8 +10,10 @@ qui è visibile la lista privata dei post scritti dal utente, cliccandoci sopra 
     @foreach ($myPost as $post)
         <li>
             {{$post->title}}
-            <a href="{{route('guePost.show', $post->id )}}">vedi</a>---<a href=""></a>---
+            <a href="{{route('show', $post->id )}}">vedi</a>---<a href="{{route('admin.post.edit', $post->id )}}">modifica</a>---
 
         </li>
     @endforeach
+
+    <a href="{{route('admin.post.create')}}">crea nuovo post</a>
 </ol>
