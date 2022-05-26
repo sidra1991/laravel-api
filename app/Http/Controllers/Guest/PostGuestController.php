@@ -49,17 +49,23 @@ class PostGuestController extends Controller
     public function show($id)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return view('guest.show', [
             'pageTitle' => $post->title,
             'post'      => $post
         ]);
 =======
+=======
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
         dd($id);
         if ($post->id ) {
             #
         }
 
         return view('guest.show');
+<<<<<<< HEAD
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
+=======
 >>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
     }
 

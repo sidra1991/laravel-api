@@ -29,6 +29,9 @@ Route::resource('/ppg', 'Guest\PostGuestController');
 //Route::get('/home', 'Guest\HomePageController@index')->name('home');
 Route::get('/show', 'Guest\PostGuestController@show')->name('show');
 Route::get('/list', 'Guest\PostGuestController@index')->name('list');
+<<<<<<< HEAD
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
+=======
 >>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
 
 

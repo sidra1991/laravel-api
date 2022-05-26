@@ -7,7 +7,11 @@
     @foreach ($list as $post)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <li> {{$post->title}} <a href="{{ route('ppg.show', $post->id) }}">guarda meglio</a></li>
+=======
+    <li> {{$post->title}} <a href="{{ route('show', $post->id) }}">guarda meglio</a></li>
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
 =======
     <li> {{$post->title}} <a href="{{ route('show', $post->id) }}">guarda meglio</a></li>
 >>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
