@@ -14,7 +14,8 @@ class PostGuestController extends Controller
      */
     public function index()
     {
-        $list =  Post::all()->paginate(10);
+       // dd(Post::paginate(10));
+        $list =  Post::paginate(10);
         return view('guest.list', compact('list'));
     }
 
