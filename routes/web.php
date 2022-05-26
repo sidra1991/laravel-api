@@ -21,7 +21,15 @@ Route::get('/login', function () {
     return view('auth.login');
  });
 
+<<<<<<< HEAD
 Route::resource('/ppg', 'Guest\PostGuestController');
+=======
+//Route::resource('/post', 'Guest\PostController');
+
+//Route::get('/home', 'Guest\HomePageController@index')->name('home');
+Route::get('/show', 'Guest\PostGuestController@show')->name('show');
+Route::get('/list', 'Guest\PostGuestController@index')->name('list');
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
 
 
 Auth::routes();

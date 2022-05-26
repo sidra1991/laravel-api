@@ -26,7 +26,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('ppg.index')}}">lista post</a>
+          <a class="nav-link" href="{{url('/list')}}">lista post</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

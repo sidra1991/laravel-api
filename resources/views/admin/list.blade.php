@@ -10,7 +10,7 @@ qui è visibile la lista privata dei post scritti dal utente, cliccandoci sopra 
     @foreach ($myPost as $post)
         <li>
             {{$post->title}}
-            <a href="{{route('ppg.show', $post->id)}}">vedi</a>---<a href=""></a>---
+            <a href="{{route('guePost.show', $post->id )}}">vedi</a>---<a href=""></a>---
 
         </li>
     @endforeach

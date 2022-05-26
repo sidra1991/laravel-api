@@ -46,14 +46,22 @@ class PostGuestController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show($id)
     {
+<<<<<<< HEAD
         return view('guest.show', [
             'pageTitle' => $post->title,
             'post'      => $post
         ]);
-    }
+=======
+        dd($id);
+        if ($post->id ) {
+            #
+        }
 
+        return view('guest.show');
+>>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
+    }
 
     /**
      * Show the form for editing the specified resource.
