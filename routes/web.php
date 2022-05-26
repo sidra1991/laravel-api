@@ -21,11 +21,6 @@ Route::get('/login', function () {
     return view('auth.login');
  });
 
-//Route::resource('/post', 'Guest\PostController');
-
-//Route::get('/home', 'Guest\HomePageController@index')->name('home');
-//Route::get('/show/{id}', 'Guest\PostGuestController@show')->name('show');
-//Route::get('/list', 'Guest\PostGuestController@index')->name('list');
 Route::resource('/ppg', 'Guest\PostGuestController');
 
 
@@ -43,7 +38,6 @@ Route::middleware('auth')
     });
 
 
-//Route::get('/droga', 'HomeController@index')->name('droga');
-
-
-
+Route::get("{any?}", function() {
+    return view("guests.home");
+})->where("any", ".*");

@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/admin.js":
+/*!*******************************!*\
+  !*** ./resources/js/admin.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\anthony cecconi\\Desktop\\contenitore\\laravel-api\\resources\\js\\app.js'");
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\anthony cecconi\\Desktop\\contenitore\\laravel-api\\resources\\js\\admin.js'");
 
 /***/ }),
 
@@ -109,13 +109,13 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!***************************************************************!*\
+  !*** multi ./resources/js/admin.js ./resources/sass/app.scss ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\anthony cecconi\Desktop\contenitore\laravel-api\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\anthony cecconi\Desktop\contenitore\laravel-api\resources\js\admin.js */"./resources/js/admin.js");
 module.exports = __webpack_require__(/*! C:\Users\anthony cecconi\Desktop\contenitore\laravel-api\resources\sass\app.scss */"./resources/sass/app.scss");
 
 

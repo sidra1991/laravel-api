@@ -48,8 +48,10 @@ class PostGuestController extends Controller
      */
     public function show(Post $post)
     {
-
-        return view('guest.show', compact('post'));
+        return view('guest.show', [
+            'pageTitle' => $post->title,
+            'post'      => $post
+        ]);
     }
 
 

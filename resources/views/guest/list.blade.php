@@ -8,7 +8,7 @@
 
     @foreach ($list as $post)
 
-    <li> {{$post->title}} <a href="{{ route('ppg.show ', $post->id) }}">guarda meglio</a></li>
+    <li> {{$post->title}} <a href="{{ route('ppg.show', $post->id) }}">guarda meglio</a></li>
 
     @endforeach
 </ul>
