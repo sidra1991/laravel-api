@@ -24,7 +24,7 @@ Route::get('/login', function () {
 //Route::resource('/post', 'Guest\PostController');
 
 //Route::get('/home', 'Guest\HomePageController@index')->name('home');
-Route::get('/show', 'Guest\PostGuestController@show')->name('show');
+Route::get('/show/{id}', 'Guest\PostGuestController@show')->name('show');
 Route::get('/list', 'Guest\PostGuestController@index')->name('list');
 
 
