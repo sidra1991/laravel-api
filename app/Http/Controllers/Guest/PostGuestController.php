@@ -14,8 +14,7 @@ class PostGuestController extends Controller
      */
     public function index()
     {
-       // dd(Post::paginate(10));
-        $list =  Post::paginate(10);
+        $list =  Post::all()->paginate(10);
         return view('guest.list', compact('list'));
     }
 
@@ -48,25 +47,12 @@ class PostGuestController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return view('guest.show', [
-            'pageTitle' => $post->title,
-            'post'      => $post
-        ]);
-=======
-=======
->>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
         dd($id);
         if ($post->id ) {
             #
         }
 
         return view('guest.show');
-<<<<<<< HEAD
->>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
-=======
->>>>>>> parent of 742e310 (lo show non funziona ho provato di tutto)
     }
 
     /**
