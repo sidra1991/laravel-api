@@ -14,7 +14,7 @@ class Post extends Model
     static public function slugheratore($title) {
         $slug = Str::of($title)->slug('-');
         $i = 1;
-        while (Post::where('slug', $slug)-first()) {
+        while (Post::where('slug', $slug)->first()) {
             $slug = "$slug - $i" ;
             $i++;
         }
