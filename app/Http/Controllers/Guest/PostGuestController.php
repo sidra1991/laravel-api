@@ -46,15 +46,12 @@ class PostGuestController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        dd($id);
-        if ($post->id ) {
-            #
-        }
 
-        return view('guest.show');
+        return view('guest.show', compact('post'));
     }
+
 
     /**
      * Show the form for editing the specified resource.

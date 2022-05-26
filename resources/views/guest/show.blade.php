@@ -1,5 +1,10 @@
 @include('layouts.app')
 @include('layouts.nav')
 
+@php
+    dd($post);
+@endphp
 
-questo è lo show dove sono visibili i dettagli del post selezionato
+<h2>{{$post->title}}</h2>
+
+<p>{{$post->content}}</p>

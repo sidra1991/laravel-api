@@ -43,17 +43,6 @@ class PostController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show()
-    {
-        return view('guest.show');
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Post  $post
