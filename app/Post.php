@@ -7,6 +7,9 @@ use Illuminate\Support\Str;
 
 class Post extends Model
 {
+    protected $fillable = [
+        'title', 'content', 'slug','user_id'
+    ];
     public function tag(){
         return $this->belongsToMany('App\Tag');
     }

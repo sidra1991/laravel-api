@@ -39,7 +39,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        return redirect('/');
+        $data = $request->all();
+
+        $newPost = new Post;
+        $newPost->title = $data['title'];
+        $newPost->content = $data['content'];
+        $newPost->user_id = Auth::user()->id;
+        $newPost->slug = 'roba inutile';
+        $newPost->save();
+
+        return redirect('/admin/post');
     }
 
     /**
@@ -73,7 +82,11 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        return redirect('/');
+        $data = $request->all();
+
+        $post->update($data);
+
+        return redirect('/admin/post');
     }
 
     /**
@@ -84,6 +97,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect('/');
     }
 }
