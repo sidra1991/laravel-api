@@ -10,8 +10,15 @@ qui è visibile la lista privata dei post scritti dal utente, cliccandoci sopra 
     @foreach ($myPost as $post)
         <li>
             {{$post->title}}
-            <a href="{{route('show', $post->id )}}">vedi</a>---<a href="{{route('admin.post.edit', $post->id )}}">modifica</a>--- <a href="{{route('admin.post.destroy', $post->id)}}">elimina</a>
-
+            <a href="{{route('show', $post->id )}}">vedi</a>
+            ---
+            <a href="{{route('admin.post.edit', $post->id )}}">modifica</a>
+            ---
+            <form action="{{route('admin.post.destroy', $post->id)}}" method="post" >
+                @method('DELETE')
+                @csrf
+                <input type="submit" value="elimina" >
+            </form>
 
         </li>
     @endforeach
